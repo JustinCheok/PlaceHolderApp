@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">FinalProjectX</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="home_fragment_label">Home</string>
+    <string name="Tictactoe_fragment_label">Tic Tac Toe</string>
+    <string name="Tictactoe_button">Tic Tac Toe</string>
+    <string name="go_back_home_button">home</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="Minesweeper_button">Minesweeper</string>
+    <string name="Minesweeper_fragment_label">Minesweeper</string>
+    <string name="Tictactoe_player1_label">Player 1</string>
+    <string name="Tictactoe_player2_label">Player 2</string>
+    <string name="Reset_Button">Reset Game</string>
+
+</resources>

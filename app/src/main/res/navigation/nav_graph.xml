@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/HomeFragment">
+
+    <fragment
+        android:id="@+id/HomeFragment"
+        android:name="com.mobileapp.finalprojectx.HomeFragment"
+        android:label="@string/home_fragment_label"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_HomeFragment_to_TictactoeFragment"
+            app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_HomeFragment_to_minesweeperFragment"
+            app:destination="@id/minesweeperFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.mobileapp.finalprojectx.TictactoeFragment"
+        android:label="@string/Tictactoe_fragment_label"
+        tools:layout="@layout/fragment_tictactoe">
+
+        <action
+            android:id="@+id/action_TictactoeFragment_to_HomeFragment"
+            app:destination="@id/HomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/minesweeperFragment"
+        android:name="com.mobileapp.finalprojectx.MinesweeperFragment"
+        android:label="fragment_minesweeper"
+        tools:layout="@layout/fragment_minesweeper" >
+        <action
+            android:id="@+id/action_minesweeperFragment_to_HomeFragment"
+            app:destination="@id/HomeFragment" />
+    </fragment>
+</navigation>
